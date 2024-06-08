@@ -18,9 +18,9 @@ module "aft" {
   ct_home_region              = var.ct_home_region
   tf_backend_secondary_region = var.tf_backend_secondary_region
 
-  vcs_provider                                  = "github"
-  account_request_repo_name                     = "${var.github_username}/mspv2-aft-account-request-core"
-  account_provisioning_customizations_repo_name = "${var.github_username}/mspv2-aft-account-provisioning-customizations-core"
-  global_customizations_repo_name               = "${var.github_username}/mspv2-aft-global-customizations-core"
-  account_customizations_repo_name              = "${var.github_username}/mspv2-aft-account-customizations-core"
+vcs_provider                                  = "github"
+  account_request_repo_name                     = "${var.github_username}/learn-terraform-aft-account-request"
+  global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
+  account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
+  account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
 }
