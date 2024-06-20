@@ -10,7 +10,7 @@ terraform {
 }
 
 module "aft" {
-  source                      = "github.com/aft08062024/terraform-aws-control_tower_account_factory?ref=remove-vpc"
+  source                      = "github.com/aft08062024/terraform-aws-control_tower_account_factory?ref=modify-lambda-timeout"
   ct_management_account_id    = var.ct_management_account_id
   log_archive_account_id      = var.log_archive_account_id
   audit_account_id            = var.audit_account_id
